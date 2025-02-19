@@ -1,16 +1,40 @@
 $(document).ready(function () {
     // Hardcoded salesperson name
-    const salesperson = "James D. Halpert";
+    const salesperson = "Tauhidul Islam";
 
-    // Initial list of clients (autocomplete source)
-    let clients = ["Shake Shack", "Toast", "Computer Science Department"];
+    // List of clients
+    let clients = [
+        "Shake Shack",
+        "Toast",
+        "Computer Science Department",
+        "Teacher's College",
+        "Starbucks",
+        "Subsconsious",
+        "Flat Top",
+        "Joe's Coffee",
+        "Max Caffe",
+        "Nussbaum & Wu",
+        "Taco Bell",
+  ];
 
     // Initial sales data
     let sales = [
-        { client: "Shake Shack", reams: 100, salesperson: salesperson },
-        { client: "Toast", reams: 400, salesperson: salesperson },
-        { client: "Computer Science Department", reams: 1000, salesperson: salesperson }
-    ];
+        {
+            "salesperson": "James D. Halpert",
+            "client": "Shake Shack",
+            "reams": 100
+        },
+        {
+            "salesperson": "Stanley Hudson",
+            "client": "Toast",
+            "reams": 400
+        },
+        {
+            "salesperson": "Michael G. Scott",
+            "client": "Computer Science Department",
+            "reams": 1000
+        },
+    ]
 
     // Initialize autocomplete for the client input
     $("#client").autocomplete({
