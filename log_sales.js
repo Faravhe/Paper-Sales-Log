@@ -57,7 +57,7 @@ $(document).ready(function () {
                     <span>${sale.client}</span>
                     <span>${sale.reams}</span>
                     <span>${sale.salesperson}</span>
-                    <button class="delete-btn btn btn-danger btn-sm">Delete</button>
+                    <button class="delete-btn btn btn-danger btn-sm">X</button>
                 </div>
             `);
 
